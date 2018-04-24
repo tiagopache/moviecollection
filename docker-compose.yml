@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  movie-collection:
+    image: movie-collection
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8080:80
